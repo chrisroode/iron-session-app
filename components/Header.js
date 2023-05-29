@@ -14,13 +14,13 @@ export default function Header() {
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              Home
             </Link>
           </li>
           {user?.isLoggedIn === false && (
             <li>
               <Link href="/login">
-                <a>Login</a>
+                Login
               </Link>
             </li>
           )}
@@ -28,7 +28,7 @@ export default function Header() {
             <>
               <li>
                 <Link href="/profile-sg">
-                  <a>
+                  
                     <span
                       style={{
                         marginRight: ".3em",
@@ -45,12 +45,12 @@ export default function Header() {
                       />
                     </span>
                     Profile (Static Generation, recommended)
-                  </a>
+                  
                 </Link>
               </li>
               <li>
                 <Link href="/profile-ssr">
-                  <a>Profile (Server-side Rendering)</a>
+                  Profile (Server-side Rendering)
                 </Link>
               </li>
               <li>

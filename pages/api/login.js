@@ -3,7 +3,15 @@ import { withIronSessionApiRoute } from "iron-session/next";
 import { sessionOptions } from "lib/session";
 const octokit = new Octokit();
 
+/*
+export default function handler(req, res) {
+	console.log(sessionOptions);
+  res.status(200).json({ name: 'John Doe' });
+}*/
+
+
 export default withIronSessionApiRoute(async (req, res) => {
+	
   const { username } = await req.body;
 
   try {
@@ -19,3 +27,4 @@ export default withIronSessionApiRoute(async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 }, sessionOptions);
+
