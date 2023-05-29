@@ -1,3 +1,10 @@
+## Before reading futher!
+
+This is a clone of iron-session's next.js example: https://github.com/vvo/iron-session that is currently broken.  I'm in the very early stages of updating the code to work with nextjs's new app router.  If you want to help with this, please feel free to reach out!
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
